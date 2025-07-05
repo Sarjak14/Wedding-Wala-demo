@@ -154,17 +154,18 @@ const Navigation = ({ isMenuOpen, setIsMenuOpen, currentSection, scrollToSection
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-red-900 via-red-800 to-black">
-        <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-red-950 to-black">
         <motion.div
           initial={{ scale: 1.1, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
+          animate={{ scale: 1, opacity: 0.3 }}
           transition={{ duration: 2 }}
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: `url('https://images.pexels.com/photos/19168723/pexels-photo-19168723.jpeg')`
           }}
         ></motion.div>
+        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/50"></div>
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
