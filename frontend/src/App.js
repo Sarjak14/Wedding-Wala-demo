@@ -179,18 +179,18 @@ const HeroSection = () => {
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="text-5xl md:text-7xl font-bold text-gold leading-tight"
+            className="text-5xl md:text-7xl font-bold text-white leading-tight drop-shadow-2xl"
           >
             Sacred Traditions
             <br />
-            <span className="text-white">Perfect Ceremonies</span>
+            <span className="text-gold drop-shadow-2xl">Perfect Ceremonies</span>
           </motion.h1>
           
           <motion.p
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.9, duration: 0.8 }}
-            className="text-xl md:text-2xl text-gold/90 max-w-2xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed drop-shadow-lg"
           >
             Exquisite Nepali wedding accessories crafted with love and tradition. 
             From ceremonial thalis to decorative umbrellas, we bring authenticity to your special moments.
@@ -203,16 +203,16 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <motion.button
-              whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(220, 38, 38, 0.5)" }}
+              whileHover={{ scale: 1.05, boxShadow: "0 10px 40px rgba(220, 38, 38, 0.6)" }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-red-600 to-red-800 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-gradient-to-r from-red-600 to-red-800 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-2xl hover:shadow-red transition-all duration-300"
             >
               Explore Collection
             </motion.button>
             <motion.button
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.05, boxShadow: "0 10px 40px rgba(251, 191, 36, 0.3)" }}
               whileTap={{ scale: 0.95 }}
-              className="border-2 border-gold text-gold px-8 py-4 rounded-full font-semibold text-lg hover:bg-gold hover:text-black transition-all duration-300"
+              className="bg-gold/20 backdrop-blur-sm border-2 border-gold text-gold px-8 py-4 rounded-full font-semibold text-lg hover:bg-gold hover:text-black transition-all duration-300"
             >
               Contact Us
             </motion.button>
